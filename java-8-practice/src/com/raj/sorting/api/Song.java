@@ -40,9 +40,19 @@ public class Song implements Comparable<Song> {
 	}
 
 	@Override
-	public int compareTo(Song o) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Song song) {
+		// writing my own compareTo logic
+//		if(this.getYear() < song.getYear()) {
+//			return -1;
+//		}
+//		if(this.getYear() > song.getYear()) {
+//			return 1;
+//		}
+//		return 0;
+		
+		//Sort things based on the Title
+		
+		return -this.getTitle().compareTo(song.getTitle());
 	}
 	
 	
